@@ -13,7 +13,7 @@ services:
     image: nginx:1.17-alpine
     restart: unless-stopped
     ports:
-      - "${PUBLIC_PORT}:80"
+      - "${PUBLIC_PORT}:443"
     volumes:
       - ./:/var/www/html
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
